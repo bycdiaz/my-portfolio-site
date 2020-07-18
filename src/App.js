@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Routes from "./components/Routes";
 const GlobalStyle = createGlobalStyle`
   body {
-    background-color: #FEFEFA;
+    background-color: #EDEAE0;
   }
 `
 
