@@ -7,7 +7,7 @@ import "./styles/reset.css"
 
 ReactDOM.render(
   <React.StrictMode>
-    <HashRouter basename='my-portfolio-site'>
+    <HashRouter basename='/'>
       <App />
     </HashRouter>
   </React.StrictMode>,
