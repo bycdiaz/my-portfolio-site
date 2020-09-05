@@ -1,7 +1,7 @@
 import React from 'react';
 import skillList from "../json/skillList";
 import styled from 'styled-components';
-const SkillsContainer = styled.div`
+const SkillsContainer = styled.section`
 display: flex;
 flex-direction: row;
 justify-content: space-around;
@@ -31,7 +31,7 @@ flex-wrap: wrap;
 
 function Skills() {
   return (
-    <SkillsContainer>
+    <SkillsContainer id="skills">
       {skillList.map(skill => {
           return (
             <div className="skill" key={skill['skillName']}>

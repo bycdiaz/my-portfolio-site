@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 import styled from 'styled-components';
+
 const LinkList = styled.ul`
 display: flex;
 flex-direction: row;
@@ -26,13 +27,13 @@ function NavLinks() {
   return (
     <LinkList>
       <li className="nav-item">
-        <Link to="/">Home</Link>
+        <Link smooth to="/#home">Home</Link>
       </li>
       <li className="nav-item">
-        <Link to="/skills">Skills</Link>
+        <Link smooth to="/#skills">Skills</Link>
       </li>
       <li className="nav-item">
-        <Link to="/projects">Projects</Link>
+        <Link smooth to="/#projects">Projects</Link>
       </li>
     </LinkList>
   );

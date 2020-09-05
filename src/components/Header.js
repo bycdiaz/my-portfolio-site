@@ -4,10 +4,15 @@ import styled from 'styled-components';
 import NavLinks from "./NavLinks";
 
 const NavContainer = styled.nav`
+position: sticky;
+top: 0;
+z-index: 2;
+
 display: flex;
 flex-direction: row;
 justify-content: space-around;
 flex-wrap: wrap;
+margin-top: 40px;
 
 .name {
   font-size: 32pt;

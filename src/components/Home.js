@@ -10,7 +10,7 @@ const AboutContainer = styled.div`
 
 function Home() {
   return (
-    <AboutContainer>
+    <AboutContainer id="home">
       <div className="bio">
         <p className="coding">
           I'm Carlos and I'm currently a freelance web developer. I started learning in 

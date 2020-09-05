@@ -30,7 +30,7 @@ const ProjectContainer = styled.div`
 
 function Projects() {
   return (
-    <ProjectContainer>
+    <ProjectContainer id="projects">
       {
         projectList.map(project => {
           return (
