@@ -40,19 +40,21 @@ function offsetScroll(element, offset) {
 
 function NavLinks() {
   const defaultState = {
-    home: false,
+    home: true,
     skills: false,
     projects: false
   }
   const [underline, setUnderline] = useState(defaultState);
 
+  // TODO Future improvement is to set underline on scroll.
   function handleClick(event) {
-    setUnderline(defaultState);
-    const clickedLinkName = event.target.text.toLowerCase();
     setUnderline({
-      ...defaultState,
-      [clickedLinkName]: true,
-    })
+      home: false,
+      skills: false,
+      projects: false
+    });
+    const clickedLinkName = event.target.text.toLowerCase();
+    setUnderline({ [clickedLinkName]: true })
   }
 
   function underlined(stateValue) {
