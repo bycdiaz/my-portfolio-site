@@ -1,10 +1,15 @@
 import React from 'react';
-import projectList from "../json/projectList";
 import styled from 'styled-components';
-const ProjectContainer = styled.div`
+
+import projectList from "../json/projectList";
+
+const ProjectContainer = styled.section`
 .project-name {
   font-size: 20pt;
   margin: 10px 0px;
+  @media (max-width: 600px) {
+    font-size: 14pt;
+  }
 }
 
 .made-with {
@@ -20,17 +25,29 @@ const ProjectContainer = styled.div`
 }
 
 .project-image {
-  width: 400px;
-  height: 400px;
+  width: 60%;
+  @media (max-width: 600px) {
+    min-width: 80%;
+  }
+  height: auto;
   display: block;
   border: 3px solid #000000;
   margin: 30px auto;
+}
+
+.section-title {
+  font-size: 22pt;
+  font-weight: bold;
+  @media (max-width: 600px) {
+    font-size: 14pt;
+  }
 }
 `
 
 function Projects() {
   return (
-    <ProjectContainer id="projects">
+    <ProjectContainer id="projects" className="content-container">
+      <h1 className="section-title">Projects</h1>
       {
         projectList.map(project => {
           return (

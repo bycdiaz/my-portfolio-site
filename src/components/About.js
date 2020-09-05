@@ -1,16 +1,26 @@
 import React from 'react';
 import styled from 'styled-components';
-const AboutContainer = styled.div`
+
+const AboutContainer = styled.section`
 .bio > * {
   font-size: 14pt;
   margin: 15px 0px;
   line-height: normal;
 }
+
+.section-title {
+  font-size: 22pt;
+  font-weight: bold;
+  @media (max-width: 600px) {
+    font-size: 14pt;
+  }
+}
 `
 
 function About() {
   return (
-    <AboutContainer id="about">
+    <AboutContainer id="about" className="content-container">
+      <h1 className="section-title">About</h1>
       <div className="bio">
         <p className="coding">
           I'm Carlos and I'm currently a freelance web developer. I started learning in 
@@ -23,7 +33,7 @@ function About() {
         </p>
         <p className="personal">
           I grew up in Los Angeles, California and currently live in Philly, PA.
-          Presently, I'm an academic advisor for an undergraduate engineering
+          Presently, By day, I'm also an academic advisor for an undergraduate engineering
           major. I have formal training as a Salsa dancer and spent several years
           teaching and performing. I'm also currently attempting to get myself
           back to conversational in Russian.
@@ -35,7 +45,6 @@ function About() {
         </p>
       </div>
     </AboutContainer>
-    
   );
 }
 
