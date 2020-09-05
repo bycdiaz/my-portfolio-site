@@ -23,17 +23,26 @@ min-width: 350px;
 }
 `
 
+function offsetScroll(element, offset) {
+  const elementPosition = element.offsetTop - offset;
+  window.scroll({
+    top: elementPosition,
+    left: 0,
+    behavior: "smooth"
+  });
+}
+
 function NavLinks() {
   return (
     <LinkList>
       <li className="nav-item">
-        <Link smooth to="/#home">Home</Link>
+        <Link smooth to="/#home" scroll={element => offsetScroll(element, 150)}>Home</Link>
       </li>
       <li className="nav-item">
-        <Link smooth to="/#skills">Skills</Link>
+        <Link smooth to="/#skills" scroll={element => offsetScroll(element, 150)}>Skills</Link>
       </li>
       <li className="nav-item">
-        <Link smooth to="/#projects">Projects</Link>
+        <Link smooth to="/#projects" scroll={element => offsetScroll(element, 150)}>Projects</Link>
       </li>
     </LinkList>
   );
