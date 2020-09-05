@@ -15,6 +15,9 @@ flex-wrap: wrap;
 
 .title {
   font-size: 20pt;
+  @media (max-width: 600px) {
+    display: none;
+  }
 }
 `
 
