@@ -8,9 +8,9 @@ const AboutContainer = styled.div`
 }
 `
 
-function Home() {
+function About() {
   return (
-    <AboutContainer id="home">
+    <AboutContainer id="about">
       <div className="bio">
         <p className="coding">
           I'm Carlos and I'm currently a freelance web developer. I started learning in 
@@ -39,4 +39,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default About;

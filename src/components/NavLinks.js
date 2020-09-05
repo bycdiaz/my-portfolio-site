@@ -40,16 +40,16 @@ function offsetScroll(element, offset) {
 
 function NavLinks() {
   const defaultState = {
-    home: true,
+    about: true,
     skills: false,
     projects: false
   }
   const [underline, setUnderline] = useState(defaultState);
 
-  // TODO Future improvement is to set underline on scroll.
+  // WISHLIST Future improvement: set underline on scroll.
   function handleClick(event) {
     setUnderline({
-      home: false,
+      about: false,
       skills: false,
       projects: false
     });
@@ -65,11 +65,11 @@ function NavLinks() {
     <LinkList>
       <li>
         <Link 
-          to="/#home"
+          to="/#about"
           scroll={element => offsetScroll(element, 150)}
-          className={`override-default ${underlined(underline.home)}`}
+          className={`override-default ${underlined(underline.about)}`}
           onClick={handleClick}
-        >Home</Link>
+        >About</Link>
       </li>
       <li>
         <Link
