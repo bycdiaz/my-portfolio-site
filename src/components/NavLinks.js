@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const LinkList = styled.ul`
 display: flex;
 flex-direction: row;
-justify-content: space-between;
+justify-content: space-evenly;
 align-items: center;
 width: 40vw;
 max-width: 400px;
@@ -14,6 +14,9 @@ min-width: 350px;
 /* TODO rather than apply this font size to each item, do it to each child of li */
 .nav-item {
   font-size: 22pt;
+  @media (max-width: 600px) {
+    font-size: 14pt;
+  }
 }
 
 .nav-item:hover {

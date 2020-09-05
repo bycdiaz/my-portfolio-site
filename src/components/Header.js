@@ -12,10 +12,14 @@ display: flex;
 flex-direction: row;
 justify-content: space-around;
 flex-wrap: wrap;
-margin-top: 40px;
+padding:20px;
+background-color: coral;
 
 .name {
   font-size: 32pt;
+  @media (max-width: 600px) {
+    font-size: 28pt;
+  }
 }
 
 .title {
@@ -29,11 +33,11 @@ margin-top: 40px;
 function Header() {
   return (
     <NavContainer>
-      <div className="nav-left">
+      <div>
         <h1 className="name">Carlos Diaz</h1>
         <h2 className="title">Web Developer</h2>
       </div>
-      <NavLinks className="nav-right"/>
+      <NavLinks />
     </NavContainer>
   );
 }
