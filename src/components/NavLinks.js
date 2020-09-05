@@ -11,8 +11,7 @@ width: 40vw;
 max-width: 400px;
 min-width: 350px;
 
-/* TODO rather than apply this font size to each item, do it to each child of li */
-.nav-item {
+> * {
   font-size: 22pt;
   @media (max-width: 600px) {
     font-size: 14pt;
@@ -38,13 +37,13 @@ function offsetScroll(element, offset) {
 function NavLinks() {
   return (
     <LinkList>
-      <li className="nav-item">
+      <li>
         <Link smooth to="/#home" scroll={element => offsetScroll(element, 150)}>Home</Link>
       </li>
-      <li className="nav-item">
+      <li>
         <Link smooth to="/#skills" scroll={element => offsetScroll(element, 150)}>Skills</Link>
       </li>
-      <li className="nav-item">
+      <li>
         <Link smooth to="/#projects" scroll={element => offsetScroll(element, 150)}>Projects</Link>
       </li>
     </LinkList>
