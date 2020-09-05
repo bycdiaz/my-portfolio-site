@@ -3,3 +3,12 @@
 html * {
   font-family: Roboto, Open-Sans, Helvetica, Sans-Serif;
 }
+
+.override-default:link, 
+.override-default:visited,
+.override-default:hover,
+.override-default:active {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bolder;
+}

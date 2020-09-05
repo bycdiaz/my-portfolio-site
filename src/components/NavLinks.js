@@ -38,13 +38,25 @@ function NavLinks() {
   return (
     <LinkList>
       <li>
-        <Link smooth to="/#home" scroll={element => offsetScroll(element, 150)}>Home</Link>
+        <Link 
+          to="/#home"
+          scroll={element => offsetScroll(element, 150)}
+          className="override-default"
+        >Home</Link>
       </li>
       <li>
-        <Link smooth to="/#skills" scroll={element => offsetScroll(element, 150)}>Skills</Link>
+        <Link
+          to="/#skills"
+          scroll={element => offsetScroll(element, 150)}
+          className="override-default"
+        >Skills</Link>
       </li>
       <li>
-        <Link smooth to="/#projects" scroll={element => offsetScroll(element, 150)}>Projects</Link>
+        <Link
+          to="/#projects"
+          scroll={element => offsetScroll(element, 150)}
+          className="override-default"
+        >Projects</Link>
       </li>
     </LinkList>
   );
