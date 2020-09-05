@@ -12,10 +12,7 @@ function App() {
   return (
     <div>
       <GlobalStyle />
-      <Header
-        name="Carlos Diaz"
-        title="Web Developer"
-      />
+      <Header/>
       <Routes />
     </div>
   );

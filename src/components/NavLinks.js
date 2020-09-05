@@ -1,14 +1,16 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import styled from 'styled-components';
-const NavList = styled.ul`
+const LinkList = styled.ul`
 display: flex;
 flex-direction: row;
-flex-wrap: wrap;
 justify-content: space-between;
-width: 50vw;
+align-items: center;
+width: 40vw;
 max-width: 400px;
+min-width: 350px;
 
+/* TODO rather than apply this font size to each item, do it to each child of li */
 .nav-item {
   font-size: 22pt;
 }
@@ -20,9 +22,9 @@ max-width: 400px;
 }
 `
 
-function NavMenu() {
+function NavLinks() {
   return (
-    <NavList>
+    <LinkList>
       <li className="nav-item">
         <Link to="/">Home</Link>
       </li>
@@ -32,8 +34,8 @@ function NavMenu() {
       <li className="nav-item">
         <Link to="/projects">Projects</Link>
       </li>
-    </NavList>
+    </LinkList>
   );
 }
 
-export default NavMenu;
+export default NavLinks;
