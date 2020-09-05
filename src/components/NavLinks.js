@@ -10,11 +10,12 @@ align-items: center;
 width: 40vw;
 max-width: 400px;
 min-width: 350px;
+background-color: #ff6500;
 
 > * {
   font-size: 22pt;
   @media (max-width: 600px) {
-    font-size: 14pt;
+    font-size: 15pt;
   }
 }
 
@@ -66,7 +67,7 @@ function NavLinks() {
       <li>
         <Link 
           to="/#about"
-          scroll={element => offsetScroll(element, 150)}
+          scroll={element => offsetScroll(element, 110)}
           className={`override-default ${underlined(underline.about)}`}
           onClick={handleClick}
         >About</Link>
@@ -74,7 +75,7 @@ function NavLinks() {
       <li>
         <Link
           to="/#skills"
-          scroll={element => offsetScroll(element, 150)}
+          scroll={element => offsetScroll(element, 110)}
           className={`override-default ${underlined(underline.skills)}`}
           onClick={handleClick}
         >Skills</Link>
@@ -82,7 +83,7 @@ function NavLinks() {
       <li>
         <Link
           to="/#projects"
-          scroll={element => offsetScroll(element, 150)}
+          scroll={element => offsetScroll(element, 110)}
           className={`override-default ${underlined(underline.projects)}`}
           onClick={handleClick}
         >Projects</Link>
