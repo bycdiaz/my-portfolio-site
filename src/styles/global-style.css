@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-html * {
+body * {
   font-family: Roboto, Open-Sans, Helvetica, Sans-Serif;
+  color: #00263b;
+  background-color: #f0efe7;
 }
 
 /* Overrides styles of default Link component of React Router */
@@ -12,4 +14,9 @@ html * {
   text-decoration: none;
   color: inherit;
   font-weight: bolder;
+  background-color: #ff6500;
+}
+
+.content-container {
+  margin: 0% 10%;
 }
