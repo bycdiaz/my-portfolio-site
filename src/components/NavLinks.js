@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import styled from 'styled-components';
 
@@ -23,6 +23,10 @@ min-width: 350px;
   text-shadow: 2px 2px 3px #000000be;
   transition: text-shadow 0.2s ease-in-out;
 }
+
+.underlined {
+  border-bottom: 5px solid white;
+}
 `
 
 function offsetScroll(element, offset) {
@@ -35,27 +39,50 @@ function offsetScroll(element, offset) {
 }
 
 function NavLinks() {
+  const defaultState = {
+    home: false,
+    skills: false,
+    projects: false
+  }
+  const [underline, setUnderline] = useState(defaultState);
+
+  function handleClick(event) {
+    setUnderline(defaultState);
+    const clickedLinkName = event.target.text.toLowerCase();
+    setUnderline({
+      ...defaultState,
+      [clickedLinkName]: true,
+    })
+  }
+
+  function underlined(stateValue) {
+    return stateValue ? 'underlined' : '';
+  }
+
   return (
     <LinkList>
       <li>
         <Link 
           to="/#home"
           scroll={element => offsetScroll(element, 150)}
-          className="override-default"
+          className={`override-default ${underlined(underline.home)}`}
+          onClick={handleClick}
         >Home</Link>
       </li>
       <li>
         <Link
           to="/#skills"
           scroll={element => offsetScroll(element, 150)}
-          className="override-default"
+          className={`override-default ${underlined(underline.skills)}`}
+          onClick={handleClick}
         >Skills</Link>
       </li>
       <li>
         <Link
           to="/#projects"
           scroll={element => offsetScroll(element, 150)}
-          className="override-default"
+          className={`override-default ${underlined(underline.projects)}`}
+          onClick={handleClick}
         >Projects</Link>
       </li>
     </LinkList>

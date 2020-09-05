@@ -4,6 +4,7 @@ html * {
   font-family: Roboto, Open-Sans, Helvetica, Sans-Serif;
 }
 
+/* Overrides styles of default Link component of React Router */
 .override-default:link, 
 .override-default:visited,
 .override-default:hover,
