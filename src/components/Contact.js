@@ -12,6 +12,10 @@ margin-bottom: 40px;
     font-size: 14pt;
   }
 }
+
+.contact {
+  margin: 30px 0px;
+}
 `
 
 function Contact() {
@@ -19,9 +23,8 @@ function Contact() {
     <ContactContainer id="contact" className="content-container">
       <h1 className="section-title">Contact</h1>
       <p className="contact">
-        Check out my <a href="https://github.com/bycdiaz">GitHub</a>.
-        You can contact me through <a href="mailto:bycdiaz@protonmail.com">my email</a> or
-        through <a href="https://www.linkedin.com/in/bycdiaz/">LinkedIn</a>.
+        You can contact me <a href="mailto:bycdiaz@protonmail.com">through email</a> or
+        <a href="https://www.linkedin.com/in/bycdiaz/" rel="noopener noreferrer" target="_blank"> LinkedIn</a>.
       </p>
     </ContactContainer>
   );
