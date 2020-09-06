@@ -26,16 +26,25 @@ function About() {
       <div className="bio">
         <p className="coding">
           I'm Carlos and I'm currently a freelance web developer. I started learning in 
-          late 2018 with <a href="https://www.theodinproject.com/">The Odin 
-          Project</a>. I've found joy in coding in a lot of ways. Making
+          late 2018 with <a href="https://www.theodinproject.com/" rel="noopener noreferrer" target="_blank">The Odin 
+          Project</a>, an open source web dev curriculum, and currently serve as a core member in
+          that community.
+          I've found joy in coding in a lot of ways. Making
           stuff is cool. Helping new learners in The Odin Project community
           has also been rewarding. I also find that I enjoy solving problems
-          in the context of larger projects and <a href="https://www.codewars.com/users/bycdiaz">
+          in the context of larger projects and <a href="https://www.codewars.com/users/bycdiaz" rel="noopener noreferrer" target="_blank">
           codewars exercises</a>.
+        </p>
+        <p>
+          You can see my recent coding activity on 
+          <a href="https://github.com/bycdiaz" rel="noopener noreferrer" target="_blank"> my github</a>. In my time volunteering there are
+          questions that come up frequently. New learners often wonder which programming language
+          they should learn. I had that question too so I gathered my thoughts on the matter <a href="https://medium.com/@bycdiaz/choosing-the-right-language-a-short-guide-on-how-not-to-ruin-your-career-2b353be1371?source=friends_link&sk=a963c1d5933d329241ae42360d218411" rel="noopener noreferrer" target="_blank">
+          in this blog post</a>.
         </p>
         <p className="personal">
           I grew up in Los Angeles, California and currently live in Philly, PA.
-          Presently, By day, I'm also an academic advisor for an undergraduate engineering
+          By day, I'm also an academic advisor for an undergraduate engineering
           major. I have formal training as a Salsa dancer and spent several years
           teaching and performing. I'm also currently attempting to get myself
           back to conversational in Russian.
