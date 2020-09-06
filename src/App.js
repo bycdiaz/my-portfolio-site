@@ -10,7 +10,7 @@ const SectionDivider = styled.hr`
   border-top: 2px solid #e35a00;
   color: #e35a00;
   margin: 50px auto;
-  max-width: 40%;
+  max-width: 1000px;
 `
 
 function App() {
