@@ -40,11 +40,6 @@ function About() {
           teaching and performing. I'm also currently attempting to get myself
           back to conversational in Russian.
         </p>
-        <p className="contact">
-          Check out my <a href="https://github.com/bycdiaz">GitHub</a>.
-          You can contact me through <a href="mailto:bycdiaz@protonmail.com">my email</a> or
-          through <a href="https://www.linkedin.com/in/bycdiaz/">LinkedIn</a>.
-        </p>
       </div>
     </AboutContainer>
   );
