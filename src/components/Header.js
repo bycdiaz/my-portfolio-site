@@ -14,6 +14,7 @@ justify-content: space-around;
 flex-wrap: wrap;
 padding: 20px 0px;
 background-color: #e35a00;
+border-bottom: 2px solid #00263b;
 
 .name-title {
   @media (max-width: 600px) {

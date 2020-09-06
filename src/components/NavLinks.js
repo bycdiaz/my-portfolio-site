@@ -67,7 +67,7 @@ function NavLinks() {
       <li>
         <Link 
           to="/#about"
-          scroll={element => offsetScroll(element, 110)}
+          scroll={element => offsetScroll(element, 120)}
           className={`override-default ${underlined(underline.about)}`}
           onClick={handleClick}
         >About</Link>
@@ -75,7 +75,7 @@ function NavLinks() {
       <li>
         <Link
           to="/#skills"
-          scroll={element => offsetScroll(element, 110)}
+          scroll={element => offsetScroll(element, 120)}
           className={`override-default ${underlined(underline.skills)}`}
           onClick={handleClick}
         >Skills</Link>
@@ -83,7 +83,7 @@ function NavLinks() {
       <li>
         <Link
           to="/#projects"
-          scroll={element => offsetScroll(element, 110)}
+          scroll={element => offsetScroll(element, 120)}
           className={`override-default ${underlined(underline.projects)}`}
           onClick={handleClick}
         >Projects</Link>
