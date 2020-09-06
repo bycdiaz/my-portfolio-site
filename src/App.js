@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 const SectionDivider = styled.hr`
   border-top: 2px solid #e35a00;
@@ -23,6 +24,8 @@ function App() {
         <Skills />
         <SectionDivider />
         <Projects />
+        <SectionDivider />
+        <Contact />
       </div>
     </>
   );
