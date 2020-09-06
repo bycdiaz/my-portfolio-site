@@ -26,7 +26,7 @@ background-color: #e35a00;
 }
 
 .underlined {
-  border-bottom: 5px solid #f0efe7;
+  border-bottom: 5px solid #f0e3ca;
 }
 `
 
