@@ -37,8 +37,8 @@ function About() {
         </p>
         <p>
           You can see my recent coding activity on 
-          <a href="https://github.com/bycdiaz" rel="noopener noreferrer" target="_blank"> my github</a>. In my time volunteering there are
-          questions that come up frequently. New learners often wonder which programming language
+          <a href="https://github.com/bycdiaz" rel="noopener noreferrer" target="_blank"> my github</a>. In my time volunteering 
+          with The Odin project there are questions that come up frequently. New learners often wonder which programming language
           they should learn. I had that question too so I gathered my thoughts on the matter <a href="https://medium.com/@bycdiaz/choosing-the-right-language-a-short-guide-on-how-not-to-ruin-your-career-2b353be1371?source=friends_link&sk=a963c1d5933d329241ae42360d218411" rel="noopener noreferrer" target="_blank">
           in this blog post</a>.
         </p>
