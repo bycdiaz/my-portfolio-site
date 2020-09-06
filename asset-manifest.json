@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/my-portfolio-site/static/css/main.9c85a34d.chunk.css",
-    "main.js": "/my-portfolio-site/static/js/main.65c31e92.chunk.js",
-    "main.js.map": "/my-portfolio-site/static/js/main.65c31e92.chunk.js.map",
+    "main.js": "/my-portfolio-site/static/js/main.c752e904.chunk.js",
+    "main.js.map": "/my-portfolio-site/static/js/main.c752e904.chunk.js.map",
     "runtime-main.js": "/my-portfolio-site/static/js/runtime-main.a93cb2ea.js",
     "runtime-main.js.map": "/my-portfolio-site/static/js/runtime-main.a93cb2ea.js.map",
-    "static/js/2.0442e65e.chunk.js": "/my-portfolio-site/static/js/2.0442e65e.chunk.js",
-    "static/js/2.0442e65e.chunk.js.map": "/my-portfolio-site/static/js/2.0442e65e.chunk.js.map",
+    "static/js/2.5f14134a.chunk.js": "/my-portfolio-site/static/js/2.5f14134a.chunk.js",
+    "static/js/2.5f14134a.chunk.js.map": "/my-portfolio-site/static/js/2.5f14134a.chunk.js.map",
     "index.html": "/my-portfolio-site/index.html",
-    "precache-manifest.4714e5c920634475f5e777d9caf15657.js": "/my-portfolio-site/precache-manifest.4714e5c920634475f5e777d9caf15657.js",
+    "precache-manifest.24b3c20aca3a8f46e25193773895a578.js": "/my-portfolio-site/precache-manifest.24b3c20aca3a8f46e25193773895a578.js",
     "service-worker.js": "/my-portfolio-site/service-worker.js",
     "static/css/main.9c85a34d.chunk.css.map": "/my-portfolio-site/static/css/main.9c85a34d.chunk.css.map",
-    "static/js/2.0442e65e.chunk.js.LICENSE.txt": "/my-portfolio-site/static/js/2.0442e65e.chunk.js.LICENSE.txt",
+    "static/js/2.5f14134a.chunk.js.LICENSE.txt": "/my-portfolio-site/static/js/2.5f14134a.chunk.js.LICENSE.txt",
     "static/media/configzme.png": "/my-portfolio-site/static/media/configzme.4c572fbe.png",
     "static/media/grotonfd-toggle.gif": "/my-portfolio-site/static/media/grotonfd-toggle.a41c32a5.gif",
     "static/media/html.png": "/my-portfolio-site/static/media/html.245a0c59.png",
+    "static/media/node_logo.svg": "/my-portfolio-site/static/media/node_logo.89ccb090.svg",
     "static/media/prereqcheck.png": "/my-portfolio-site/static/media/prereqcheck.54b6e4c8.png",
     "static/media/react.png": "/my-portfolio-site/static/media/react.82a318cc.png",
     "static/media/ruby.png": "/my-portfolio-site/static/media/ruby.37383f4c.png",
@@ -23,8 +24,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.a93cb2ea.js",
-    "static/js/2.0442e65e.chunk.js",
+    "static/js/2.5f14134a.chunk.js",
     "static/css/main.9c85a34d.chunk.css",
-    "static/js/main.65c31e92.chunk.js"
+    "static/js/main.c752e904.chunk.js"
   ]
 }
