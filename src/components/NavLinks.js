@@ -7,15 +7,14 @@ display: flex;
 flex-direction: row;
 justify-content: space-evenly;
 align-items: center;
-width: 40vw;
-max-width: 400px;
+width: 600px;
 min-width: 320px;
 background-color: #e35a00;
 
 > * {
   font-size: 22pt;
   @media (max-width: 600px) {
-    font-size: 15pt;
+    font-size: 12pt;
   }
 }
 
@@ -26,7 +25,10 @@ background-color: #e35a00;
 }
 
 .underlined {
-  border-bottom: 5px solid #f0e3ca;
+  border-bottom: 4px solid #f0e3ca;
+  @media (max-width: 600px) {
+    border-bottom: 3px solid #f0e3ca;
+  }
 }
 `
 
@@ -43,7 +45,8 @@ function NavLinks() {
   const defaultState = {
     about: true,
     skills: false,
-    projects: false
+    projects: false,
+    contact: false
   }
   const [underline, setUnderline] = useState(defaultState);
 
@@ -52,7 +55,8 @@ function NavLinks() {
     setUnderline({
       about: false,
       skills: false,
-      projects: false
+      projects: false,
+      contact: false
     });
     const clickedLinkName = event.target.text.toLowerCase();
     setUnderline({ [clickedLinkName]: true })
@@ -87,6 +91,14 @@ function NavLinks() {
           className={`override-default ${underlined(underline.projects)}`}
           onClick={handleClick}
         >Projects</Link>
+      </li>
+      <li>
+        <Link
+          to="/#contact"
+          scroll={element => offsetScroll(element, 120)}
+          className={`override-default ${underlined(underline.contact)}`}
+          onClick={handleClick}
+        >Contact</Link>
       </li>
     </LinkList>
   );
