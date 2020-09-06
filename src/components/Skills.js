@@ -8,6 +8,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-around;
 flex-wrap: wrap;
+margin-top: 30px;
 
 .skill-image {
   height: 60px;

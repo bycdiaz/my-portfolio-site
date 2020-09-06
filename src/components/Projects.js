@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import projectList from "../json/projectList";
 
 const ProjectContainer = styled.section`
+margin-top: 30px;
+
 .project-name {
   font-size: 20pt;
   margin: 10px 0px;
@@ -18,6 +20,7 @@ const ProjectContainer = styled.section`
 
 .project-links {
   margin: 25px auto;
+  max-width: 80%;
   width: 40vw;
   display: flex;
   flex-direction: row;

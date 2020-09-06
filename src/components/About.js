@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const AboutContainer = styled.section`
+margin-top: 30px;
+
 .bio > * {
   font-size: 14pt;
   margin: 15px 0px;

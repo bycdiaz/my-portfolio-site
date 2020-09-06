@@ -9,8 +9,8 @@ justify-content: space-evenly;
 align-items: center;
 width: 40vw;
 max-width: 400px;
-min-width: 350px;
-background-color: #ff6500;
+min-width: 320px;
+background-color: #e35a00;
 
 > * {
   font-size: 22pt;
@@ -26,7 +26,7 @@ background-color: #ff6500;
 }
 
 .underlined {
-  border-bottom: 5px solid white;
+  border-bottom: 5px solid #f0efe7;
 }
 `
 
