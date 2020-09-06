@@ -3,7 +3,7 @@
 html * {
   font-family: Roboto, Open-Sans, Helvetica, Sans-Serif;
   color: #00263b;
-  background-color: #f0efe7;
+  background-color: #f0e3ca;
 }
 
 /* Overrides styles of default Link component of React Router */
