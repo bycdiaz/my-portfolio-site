@@ -25,7 +25,8 @@ function About() {
       <h1 className="section-title">About</h1>
       <div className="bio">
         <p className="coding">
-          I'm Carlos and I'm currently a freelance web developer. I started learning in 
+          I'm Carlos and I'm currently a freelance web developer. My most recent experience is with front-end
+          techologies like JavaScript and React. I started learning in 
           late 2018 with <a href="https://www.theodinproject.com/" rel="noopener noreferrer" target="_blank">The Odin 
           Project</a>, an open source web dev curriculum, and currently serve as a core member in
           that community.
