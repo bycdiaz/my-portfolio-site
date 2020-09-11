@@ -12,9 +12,16 @@ display: flex;
 flex-direction: row;
 justify-content: space-around;
 flex-wrap: wrap;
+margin: 50px 30px;
 padding: 20px 0px;
-background-color: #e35a00;
-border-bottom: 2px solid #00263b;
+border-bottom: 2px solid #e35a00;
+background-color: #fff9ef;
+border-radius: 10px 10px 0px 0px;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+@media (max-width: 600px) {
+  margin: 0px 0px;
+}
 
 .name-title {
   @media (max-width: 600px) {
@@ -27,7 +34,6 @@ border-bottom: 2px solid #00263b;
   @media (max-width: 600px) {
     font-size: 28pt;
   }
-  background-color: #e35a00;
 }
 
 .title {
@@ -35,7 +41,6 @@ border-bottom: 2px solid #00263b;
   @media (max-width: 600px) {
     display: none;
   }
-  background-color: #e35a00;
 }
 `
 

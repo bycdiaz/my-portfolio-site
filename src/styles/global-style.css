@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-html * {
+html {
   font-family: Roboto, Open-Sans, Helvetica, Sans-Serif;
   color: #00263b;
   background-color: #f0e3ca;
@@ -14,7 +14,6 @@ html * {
   text-decoration: none;
   color: inherit;
   font-weight: bolder;
-  background-color: #e35a00;
 }
 
 .content-container {
@@ -23,7 +22,4 @@ html * {
   margin: 0% auto;
 }
 
-.app-content {
-  margin-left: 15px;
-  margin-right: 15px;
-}
+

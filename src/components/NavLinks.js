@@ -9,7 +9,6 @@ justify-content: space-evenly;
 align-items: center;
 width: 600px;
 min-width: 320px;
-background-color: #e35a00;
 
 > * {
   font-size: 22pt;
@@ -25,9 +24,9 @@ background-color: #e35a00;
 }
 
 .underlined {
-  border-bottom: 4px solid #f0e3ca;
+  border-bottom: 4px solid #e35a00;
   @media (max-width: 600px) {
-    border-bottom: 3px solid #f0e3ca;
+    border-bottom: 3px solid #e35a00;
   }
 }
 `
@@ -50,7 +49,6 @@ function NavLinks() {
   }
   const [underline, setUnderline] = useState(defaultState);
 
-  // WISHLIST Future improvement: set underline on scroll.
   function handleClick(event) {
     setUnderline({
       about: false,
