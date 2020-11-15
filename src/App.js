@@ -12,7 +12,7 @@ const AppContainer = styled.div`
   background-color: #fff9ef;
   border-radius: 10px 10px 10px 10px; 
   margin: 0px 30px;
-  padding: 5px 5px;
+  padding: 5px 20px;
   @media (max-width: 600px) {
     margin: 0px 10px;
     border-radius: 0px 0px 0px 0px;
