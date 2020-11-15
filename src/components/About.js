@@ -44,9 +44,8 @@ function About() {
           in this blog post</a>.
         </p>
         <p className="personal">
-          I grew up in Los Angeles, California and currently live in Philly, PA.
           By day, I'm also an academic advisor for an undergraduate engineering
-          major. I have formal training as a Salsa dancer and spent several years
+          major. I have formal training as a salsa dancer and spent several years
           teaching and performing. I'm also currently attempting to get myself
           back to conversational in Russian.
         </p>
