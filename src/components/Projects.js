@@ -45,12 +45,17 @@ margin-top: 30px;
     font-size: 14pt;
   }
 }
+
+#hp {
+  height: auto;
+  width: 350px;
+}
 `
 
 function Projects() {
   return (
     <ProjectContainer id="projects" className="content-container">
-      <h1 className="section-title">Projects</h1>
+      <h1 className="section-title">Past Work</h1>
       {
         projectList.map(project => {
           return (
@@ -58,25 +63,29 @@ function Projects() {
               <h2 className="project-name">{project['projectName']}</h2>
               <h3 className="project-description">{project['description']}</h3>
               <h3 className="made-with">{project['madeWith']}</h3>
+              {
+                project.demo && <h3>{project.demo}</h3>
+              }
               <div className="project-links">
-                <a 
-                  href={project['repoLink']}
-                  className="project-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Github Repository
-                </a>
-                <a 
-                  href={project['liveLink']}
-                  className="project-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Live View
-                </a>
+              <a 
+                href={project['repoLink']}
+                className="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                { project.repoLink !== undefined && 'Github Repository' }
+              </a>
+              <a 
+                href={project['liveLink']}
+                className="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                { project.liveLink !== undefined && 'Live View' }
+              </a>
               </div>
               <img
+                id = {project.projectName === 'Hyper Protocol' && 'hp'}
                 className="project-image"
                 src={project['image']}
                 alt={`${project['projectName']} screenshot`}

@@ -88,7 +88,7 @@ function NavLinks() {
           scroll={element => offsetScroll(element, 115)}
           className={`override-default ${underlined(underline.projects)}`}
           onClick={handleClick}
-        >Projects</Link>
+        >Past Work</Link>
       </li>
       <li>
         <Link
