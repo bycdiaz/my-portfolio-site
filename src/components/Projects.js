@@ -54,7 +54,7 @@ margin-top: 30px;
 
 function Projects() {
   return (
-    <ProjectContainer id="projects" className="content-container">
+    <ProjectContainer id="pastwork" className="content-container">
       <h1 className="section-title">Past Work</h1>
       {
         projectList.map(project => {
@@ -85,7 +85,7 @@ function Projects() {
               </a>
               </div>
               <img
-                id = {project.projectName === 'Hyper Protocol' && 'hp'}
+                id={ project.projectName === 'Hyper Protocol' ? 'hp' : undefined }
                 className="project-image"
                 src={project['image']}
                 alt={`${project['projectName']} screenshot`}
