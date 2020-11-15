@@ -53,10 +53,10 @@ function NavLinks() {
     setUnderline({
       about: false,
       skills: false,
-      projects: false,
+      pastwork: false,
       contact: false
     });
-    const clickedLinkName = event.target.text.toLowerCase();
+    const clickedLinkName = event.target.text.toLowerCase().split(' ').join('');
     setUnderline({ [clickedLinkName]: true })
   }
 
@@ -84,9 +84,9 @@ function NavLinks() {
       </li>
       <li>
         <Link
-          to="/#projects"
+          to="/#pastwork"
           scroll={element => offsetScroll(element, 115)}
-          className={`override-default ${underlined(underline.projects)}`}
+          className={`override-default ${underlined(underline.pastwork)}`}
           onClick={handleClick}
         >Past Work</Link>
       </li>
